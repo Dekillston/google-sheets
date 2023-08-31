@@ -50,3 +50,8 @@ function NodeGoogleSheets(file, sheetId, keyMass, fun) {
 		}
 	})();
 }
+//
+NodeGoogleSheets('google_file.json', '1PMlOeHs1H2E1v7pk7OSVYBSk1dozcbBR5rIuokAscYs', {append: 'list', 
+change: [['Привет', 'Как дела?']]}, (data) => {
+	console.log(data);
+})
